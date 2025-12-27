@@ -1,0 +1,52 @@
+[
+  {
+    "ps_parameter": "Reddy41115/Adventure-Works-Data-Engineering-Project-source-data/refs/heads/main/Data/AdventureWorks_Calendar.csv",
+    "sink_parameter_folder": "AdventureWorks_Calendar",
+    "sink_parameter_file": "AdventureWorks_Calendar.csv"
+  },
+  {
+    "ps_parameter": "Reddy41115/Adventure-Works-Data-Engineering-Project-source-data/refs/heads/main/Data/AdventureWorks_Product_Categories.csv",
+    "sink_parameter_folder": "AdventureWorks_Product_Categories",
+    "sink_parameter_file": "AdventureWorks_Product_Categories.csv"
+  },
+  {
+    "ps_parameter": "Reddy41115/Adventure-Works-Data-Engineering-Project-source-data/refs/heads/main/Data/AdventureWorks_Product_Subcategories.csv",
+    "sink_parameter_folder": "AdventureWorks_Product_Subcategories",
+    "sink_parameter_file": "AdventureWorks_Product_Subcategories.csv"
+  },
+  {
+    "ps_parameter": "Reddy41115/Adventure-Works-Data-Engineering-Project-source-data/refs/heads/main/Data/AdventureWorks_Products.csv",
+    "sink_parameter_folder": "AdventureWorks_Products",
+    "sink_parameter_file": "AdventureWorks_Products.csv"
+  },
+  {
+    "ps_parameter": "Reddy41115/Adventure-Works-Data-Engineering-Project-source-data/refs/heads/main/Data/AdventureWorks_Returns.csv",
+    "sink_parameter_folder": "AdventureWorks_Returns",
+    "sink_parameter_file": "AdventureWorks_Returns.csv"
+  },
+  {
+    "ps_parameter": "Reddy41115/Adventure-Works-Data-Engineering-Project-source-data/refs/heads/main/Data/AdventureWorks_Sales_2015.csv",
+    "sink_parameter_folder": "AdventureWorks_Sales_2015",
+    "sink_parameter_file": "AdventureWorks_Sales_2015.csv"
+  },
+  {
+    "ps_parameter": "Reddy41115/Adventure-Works-Data-Engineering-Project-source-data/refs/heads/main/Data/AdventureWorks_Sales_2016.csv",
+    "sink_parameter_folder": "AdventureWorks_Sales_2016",
+    "sink_parameter_file": "AdventureWorks_Sales_2016.csv"
+  },
+  {
+    "ps_parameter": "Reddy41115/Adventure-Works-Data-Engineering-Project-source-data/refs/heads/main/Data/AdventureWorks_Sales_2017.csv",
+    "sink_parameter_folder": "AdventureWorks_Sales_2017",
+    "sink_parameter_file": "AdventureWorks_Sales_2017.csv"
+  },
+  {
+    "ps_parameter": "Reddy41115/Adventure-Works-Data-Engineering-Project-source-data/refs/heads/main/Data/AdventureWorks_Territories.csv",
+    "sink_parameter_folder": "AdventureWorks_Territories",
+    "sink_parameter_file": "AdventureWorks_Territories.csv"
+  },
+  {
+    "ps_parameter": "Reddy41115/Adventure-Works-Data-Engineering-Project-source-data/refs/heads/main/Data/AdventureWorks_Customers.csv",
+    "sink_parameter_folder": "AdventureWorks_Customers",
+    "sink_parameter_file": "AdventureWorks_Customers.csv"
+  }
+]
