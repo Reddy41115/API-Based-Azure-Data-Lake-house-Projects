@@ -1,0 +1,46 @@
+--------1st step Credentials
+---create master key for database
+CREATE MASTER KEY
+ENCRYPTION BY PASSWORD = 'Srym@41115';
+
+----Create Database Scoped Credential (Managed Identity)
+CREATE DATABASE SCOPED CREDENTIAL ADLSCred
+WITH IDENTITY = 'Managed Identity';
+
+
+-------2nd step External data sources
+
+CREATE EXTERNAL DATA SOURCE SilverADLS
+WITH (
+    LOCATION = 'https://storageaccountadlsreddy.dfs.core.windows.net/silver',
+    CREDENTIAL = ADLSCred
+    )
+----
+CREATE EXTERNAL DATA SOURCE GoldADLS
+WITH (
+    LOCATION = 'https://storageaccountadlsreddy.dfs.core.windows.net/gold',
+    CREDENTIAL = ADLSCred
+    )
+
+
+--------3rd external file formate_parquet
+
+CREATE EXTERNAL FILE FORMAT ParquetFileFormat
+WITH (
+    FORMAT_TYPE = PARQUET,
+    DATA_COMPRESSION = 'org.apache.hadoop.io.compress.SnappyCodec'
+);
+
+
+-----4th creating external table for gold.externalsales
+CREATE EXTERNAL TABLE gold.ExternalSales
+WITH (
+    LOCATION = 'AdventureWorks_Sales_2015',
+    DATA_SOURCE = GoldADLS,
+    FILE_FORMAT = ParquetFileFormat
+)
+AS
+SELECT *
+FROM Gold.AdventureWorks_Sales_2015;
+
+select * from gold.ExternalSales
