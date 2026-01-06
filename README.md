@@ -2,19 +2,18 @@ An end-to-end API-driven Azure Data Lakehouse project using ADF, Databricks, ADL
 
 ## FINAL ARCHITECTURE we FOLLOW ##
 
-#Source Systems#
-   ↓
-#Azure Data Factory#
-   ↓
-#ADLS Gen2 – Bronze (raw files)#
-   ↓
-#Databricks Job (scheduled / event)#
-   ↓
-#Silver Delta tables#
-   ↓
-#Gold Delta tables#
-   ↓
-#Databricks SQL / Synapse#
-   ↓
-#Power BI#
-
+- Source Systems  
+- ↓  
+- Azure Data Factory  
+- ↓  
+- ADLS Gen2 – Bronze (raw files)  
+- ↓  
+- Databricks Job (scheduled / event)  
+- ↓  
+- Silver Delta tables  
+- ↓  
+- Gold Delta tables  
+- ↓  
+- Databricks SQL / Synapse  
+- ↓  
+- Power BI
